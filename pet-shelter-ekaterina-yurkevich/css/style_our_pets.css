@@ -1,0 +1,290 @@
+                        *,
+                        *::before,
+                        *::after {
+                            box-sizing: border-box;
+                        }
+                        
+                        ul[class],
+                        ol[class] {
+                            padding: 0;
+                        }
+                        
+                        body,
+                        h1,
+                        h2,
+                        h3,
+                        h4,
+                        p,
+                        ul[class],
+                        ol[class],
+                        li,
+                        figure,
+                        figcaption,
+                        blockquote,
+                        dl,
+                        dd {
+                            margin: 0;
+                        }
+                        
+                        img {
+                            display: block;
+                            max-width: 100%;
+                        }
+                        
+                        header {
+                            font-family: arial;
+                            background-color: #fff;
+                            padding: 30px 0;
+                        }
+                        
+                        .container {
+                            max-width: 1200px;
+                            margin: auto;
+                        }
+                        
+                        .header-box {
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: center;
+                        }
+                        
+                        header a {
+                            text-decoration: none;
+                            color: #545454;
+                        }
+                        
+                        .logo a {
+                            font-family: georgia;
+                            font-size: 32px;
+                            font-weight: 400;
+                            line-height: 110%;
+                            letter-spacing: 0.06em;
+                        }
+                        
+                        .logo p {
+                            font-size: 13px;
+                            color: #292929;
+                            letter-spacing: 0.1em;
+                            margin-top: 10px;
+                        }
+                        
+                        nav ul {
+                            display: flex;
+                        }
+                        
+                        nav li {
+                            list-style: none;
+                            margin-left: 35px;
+                        }
+                        
+                        .navigation {
+                            font-size: 15px;
+                            padding-bottom: 4px;
+                        }
+                        
+                        .navigation:hover {
+                            color: #292929;
+                        }
+                        
+                        .active {
+                            border-bottom: #F1CDB3 solid 3px;
+                        }
+                        
+                        .mobile-menu-button {
+                            display: none;
+                            border: none;
+                            background-color: transparent;
+                        }
+                        
+                        main {
+                            padding: 80px 0 100px;
+                            font-family: georgia;
+                            background-color: #F6F6F6;
+                        }
+                        
+                        .button:hover {
+                            background-color: #FDDCC4;
+                            border: 2px solid #FDDCC4;
+                        }
+                        
+                        h1 {
+                            margin-bottom: 60px;
+                            text-align: center;
+                            color: #545454;
+                            font-size: 35px;
+                            font-weight: 400;
+                            letter-spacing: 0.06em;
+                        }
+                        
+                        .pets {
+                            display: flex;
+                            flex-wrap: wrap;
+                            justify-content: space-between;
+                            margin-bottom: 30px;
+                        }
+                        
+                        .pet-card {
+                            background-color: #FAFAFA;
+                            flex-basis: 270px;
+                            margin-bottom: 30px;
+                            text-align: center;
+                            padding-bottom: 30px;
+                        }
+                        
+                        .pet-card:hover {
+                            background-color: #FFF;
+                        }
+                        
+                        .pet-card p {
+                            margin: 30px 0;
+                            color: #545454;
+                            font-size: 20px;
+                            letter-spacing: 0.06em;
+                        }
+                        
+                        .learn-more {
+                            display: inline-block;
+                            padding: 15px 45px;
+                            border: 2px solid #F1CDB3;
+                            border-radius: 100px;
+                            color: #292929;
+                            text-decoration: none;
+                            font-size: 17px;
+                            letter-spacing: 0.06em;
+                        }
+                        
+                        .pet-nav {
+                            max-width: 340px;
+                            margin: auto;
+                            display: flex;
+                            justify-content: space-between;
+                        }
+                        
+                        .pet-nav-button {
+                            width: 52px;
+                            height: 52px;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            border-radius: 50%;
+                            cursor: pointer;
+                        }
+                        
+                        .pet-nav .disabled {
+                            border: #CDCDCD 2px solid;
+                            color: #CDCDCD;
+                            background-color: #fff;
+                        }
+                        
+                        .pet-nav .active-page {
+                            border: #F1CDB3 1px solid;
+                            background-color: #F1CDB3;
+                        }
+                        
+                        .pet-nav .active-nav {
+                            border: #F1CDB3 1px solid;
+                            background-color: #fff;
+                        }
+                        
+                        button:not(.disabled):hover {
+                            background-color: #FDDCC4;
+                            border: #FDDCC4 2px solid;
+                        }
+                        
+                        footer {
+                            font-family: georgia;
+                            background: linear-gradient(90.26deg, #7D604B 0.23%, #251000 99.8%);
+                            padding: 40px 0 0;
+                            letter-spacing: 0.06em;
+                        }
+                        
+                        .footer-box {
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: flex-start;
+                            flex-wrap: wrap;
+                        }
+                        
+                        footer h3 {
+                            color: #fff;
+                            font-size: 35px;
+                            font-weight: 400;
+                            padding-top: 16px;
+                            margin-bottom: 33px;
+                        }
+                        
+                        footer p {
+                            color: #F1CDB3;
+                            font-size: 20px;
+                            min-height: 46px;
+                            display: flex;
+                            align-items: center;
+                            margin-bottom: 27px;
+                        }
+                        
+                        footer a {
+                            text-decoration: none;
+                            color: #F1CDB3;
+                            font-size: 23px;
+                        }
+                        
+                        .box-contacts,
+                        .box-place,
+                        .box-image {
+                            width: 300px;
+                        }
+                        
+                        .email {
+                            background: url(../images/mail.svg) no-repeat left center;
+                            padding-left: 60px;
+                        }
+                        
+                        .phone {
+                            background: url(../images/icon-phone.svg) no-repeat left center;
+                            padding-left: 60px;
+                        }
+                        
+                        .box-place p {
+                            background: url(../images/icon-marker.svg) no-repeat left center;
+                            padding-left: 42px;
+                        }
+                        
+                        @media (max-width: 1240px) {
+                            .container {
+                                max-width: 95%;
+                            }
+                        }
+                        
+                        @media (max-width: 768px) {
+                            .container {
+                                max-width: 92%;
+                            }
+                            .footer-box {
+                                justify-content: space-around;
+                            }
+                            .pet-card:nth-of-type(7),
+                            .pet-card:nth-of-type(8) {
+                                display: none;
+                            }
+                        }
+                        
+                        @media (max-width: 600px) {
+                            .container {
+                                max-width: 93%;
+                            }
+                            header nav {
+                                display: none;
+                            }
+                            .mobile-menu-button {
+                                display: inline-block;
+                            }
+                            .pets,
+                            .footer-box {
+                                justify-content: space-around;
+                            }
+                            .pet-card:nth-of-type(4),
+                            .pet-card:nth-of-type(5),
+                            .pet-card:nth-of-type(6) {
+                                display: none;
+                            }
+                        }
