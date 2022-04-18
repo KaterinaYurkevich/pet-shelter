@@ -1,0 +1,475 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+ul[class],
+ol[class] {
+    padding: 0;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+    margin: 0;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+header {
+    font-family: arial;
+    padding: 60px 0;
+    position: absolute;
+    z-index: 99;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.header-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header a {
+    text-decoration: none;
+    color: #CDCDCD;
+}
+
+.logo a {
+    font-family: georgia;
+    color: #F1CDB3;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 110%;
+    letter-spacing: 0.06em;
+}
+
+.logo p {
+    font-size: 13px;
+    color: #fff;
+    letter-spacing: 0.1em;
+    margin-top: 10px;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav li {
+    list-style: none;
+    margin-left: 35px;
+}
+
+.navigation {
+    font-size: 15px;
+    padding-bottom: 4px;
+}
+
+.navigation:hover {
+    color: #FAFAFA;
+}
+
+.active {
+    color: #FAFAFA;
+    border-bottom: #F1CDB3 solid 3px;
+}
+
+.mobile-menu-button {
+    display: none;
+    border: none;
+    background-color: transparent;
+}
+
+main {
+    font-family: arial;
+    font-size: 15px;
+    line-height: 160%;
+    color: #545454;
+    background-color: #fff;
+}
+
+section {
+    padding: 80px 0 100px;
+}
+
+.box-about {
+    position: relative;
+    background: linear-gradient(90.26deg, #7D604B 0.23%, #251000 99.8%);
+    padding: 180px 0 0;
+}
+
+.box-about-wrapper {
+    padding: 163px 0px 244px 0px;
+    background: url(../images/start-screen-puppy.png) no-repeat;
+    background-position: right bottom;
+}
+
+.box-about h1 {
+    color: #fff;
+    max-width: 310px;
+    font-size: 44px;
+    font-weight: 400;
+    font-family: georgia;
+    line-height: 130%;
+}
+
+.box-about p {
+    color: #CDCDCD;
+    max-width: 460px;
+    font-family: arial;
+    font-size: 15px;
+    line-height: 160%;
+    margin: 42px 0 41px;
+}
+
+.button {
+    display: inline-block;
+    padding: 15px 45px;
+    border: 2px solid #F1CDB3;
+    border-radius: 100px;
+    color: #292929;
+    text-decoration: none;
+    font-size: 17px;
+    letter-spacing: 0.06em;
+    font-family: georgia;
+}
+
+.button:hover {
+    background-color: #FDDCC4;
+    border: 2px solid #FDDCC4;
+}
+
+.make-friend {
+    background-color: #F1CDB3;
+}
+
+.box-about-shelter-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.box-about-shelter {
+    max-width: 430px;
+}
+
+.box-about-shelter img {
+    margin-right: 125px;
+}
+
+main h2 {
+    color: #545454;
+    font-size: 35px;
+    font-weight: 400;
+    font-family: georgia;
+    line-height: 130%;
+    letter-spacing: 0.06em;
+}
+
+.box-about-shelter p {
+    color: #4C4C4C;
+    font-size: 15px;
+    margin-top: 25px;
+}
+
+.friends-looking-house-wrapper {
+    background-color: #F6F6F6;
+    text-align: center;
+}
+
+.friends-looking-house {
+    padding: 60px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.friends-looking-house-cards {
+    display: flex;
+    width: 990px;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.pet-card {
+    background-color: #FAFAFA;
+    flex-basis: 270px;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.pet-card:hover {
+    background-color: #FFF;
+}
+
+.pet-card p {
+    margin: 30px 0;
+    color: #545454;
+    font-family: georgia;
+    font-size: 20px;
+    letter-spacing: 0.06em;
+}
+
+.learn-more {
+    font-family: georgia;
+}
+
+.pet-nav-button-right,
+.pet-nav-button-left {
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: #F6F6F6;
+    flex-shrink: 0;
+}
+
+.pet-nav-button-right {
+    background: url(../images/arrow-right.svg) no-repeat;
+    background-position: center center;
+}
+
+.pet-nav-button-left {
+    background: url(../images/arrow-left-disabled.png) no-repeat;
+    background-position: center center;
+}
+
+.pet-nav-button-right:hover {
+    background-color: #FDDCC4;
+    border: #FDDCC4 2px solid;
+}
+
+.disabled {
+    border: #CDCDCD 2px solid;
+    color: #CDCDCD;
+}
+
+.active-nav {
+    border: #F1CDB3 2px solid;
+    background-color: #F6F6F6;
+    color: #292929;
+}
+
+.know-rest {
+    background-color: #F1CDB3;
+    font-family: georgia;
+}
+
+.help-shelter-wrapper {
+    text-align: center;
+}
+
+.help-shelter {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-top: 5px;
+}
+
+.help-card img {
+    display: inline-block;
+}
+
+.help-card {
+    color: #545454;
+    font-family: georgia;
+    font-size: 20px;
+    letter-spacing: 0.06em;
+    line-height: 115%;
+    margin: 55px 60px 0;
+}
+
+.help-card p {
+    padding-top: 30px;
+}
+
+.about-donation-wrapper {
+    background: #F6F6F6;
+}
+
+.about-donation {
+    display: flex;
+    padding: 0 142px;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.about-donation-text {
+    max-width: 380px;
+    margin: 0;
+}
+
+.about-donation p {
+    font-family: georgia;
+    letter-spacing: 0.06em;
+    margin-top: 20px;
+}
+
+.about-donation p:last-child {
+    font-size: 12px;
+    font-style: italic;
+    line-height: 150%;
+    letter-spacing: 0;
+    color: #B2B2B2;
+}
+
+.credit-card {
+    display: inline-block;
+    max-width: 350px;
+    padding: 10px 15px;
+    border-radius: 9px;
+    background-color: #F1CDB3;
+    font-family: georgia;
+    font-size: 20px;
+}
+
+.credit-card span {
+    background: url(../images/credit-card.svg) no-repeat;
+    background-size: contain;
+    padding-left: 45px;
+}
+
+footer {
+    font-family: georgia;
+    background: linear-gradient(90.26deg, #7D604B 0.23%, #251000 99.8%);
+    padding: 40px 0 0;
+    letter-spacing: 0.06em;
+}
+
+.footer-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+footer h3 {
+    color: #fff;
+    font-size: 35px;
+    font-weight: 400;
+    padding-top: 16px;
+    margin-bottom: 33px;
+}
+
+footer p {
+    color: #F1CDB3;
+    font-size: 20px;
+    min-height: 46px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 27px;
+}
+
+footer a {
+    text-decoration: none;
+    color: #F1CDB3;
+    font-size: 23px;
+}
+
+.box-contacts,
+.box-place,
+.box-image {
+    width: 300px;
+}
+
+.email {
+    background: url(../images/mail.svg) no-repeat left center;
+    padding-left: 60px;
+}
+
+.phone {
+    background: url(../images/icon-phone.svg) no-repeat left center;
+    padding-left: 60px;
+}
+
+.box-place p {
+    background: url(../images/icon-marker.svg) no-repeat left center;
+    padding-left: 42px;
+}
+
+@media (max-width: 1240px) {
+    .container {
+        max-width: 95%;
+    }
+    .box-about p {
+        max-width: 350px;
+    }
+}
+
+@media (max-width: 990px) {
+    .container {
+        max-width: 92%;
+    }
+    section {
+        padding: 30px 0 50px;
+    }
+    .box-about-wrapper {
+        background: none;
+        padding: 30px 0 50px;
+    }
+    .box-about-shelter {
+        max-width: 320px;
+    }
+    .friends-looking-house-cards,
+    .help-shelter,
+    .about-donation,
+    .footer-box {
+        justify-content: space-around;
+    }
+    .about-donation {
+        padding: 0 50px;
+    }
+    .pet-card:nth-of-type(3) {
+        display: none;
+    }
+}
+
+@media (max-width: 600px) {
+    .container {
+        max-width: 93%;
+    }
+    header nav {
+        display: none;
+    }
+    .mobile-menu-button {
+        display: inline-block;
+    }
+    .about-donation {
+        padding: 0 25px;
+    }
+    .credit-card {
+        padding: 10px 10px;
+    }
+    .credit-card span {
+        font-size: 12px;
+        padding-left: 25px;
+    }
+    .pet-card:nth-of-type(2) {
+        display: none;
+    }
+}
