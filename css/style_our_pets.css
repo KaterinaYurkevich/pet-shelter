@@ -68,13 +68,17 @@
                             margin-top: 10px;
                         }
                         
-                        nav ul {
+                        header nav ul {
                             display: flex;
                         }
                         
-                        nav li {
+                        header nav li {
                             list-style: none;
                             margin-left: 35px;
+                        }
+                        
+                        header nav li:first-child {
+                            margin-left: 0;
                         }
                         
                         .navigation {
@@ -255,9 +259,20 @@
                             }
                         }
                         
-                        @media (max-width: 768px) {
+                        @media (max-width: 900px) {
+                            .pets {
+                                max-width: 90%;
+                                margin: auto;
+                                justify-content: space-evenly;
+                            }
+                        }
+                        
+                        @media (max-width: 800px) {
                             .container {
                                 max-width: 92%;
+                            }
+                            header nav li {
+                                margin-left: 15px;
                             }
                             .footer-box {
                                 justify-content: space-around;
@@ -268,7 +283,7 @@
                             }
                         }
                         
-                        @media (max-width: 600px) {
+                        @media (max-width: 700px) {
                             .container {
                                 max-width: 93%;
                             }
@@ -278,9 +293,25 @@
                             .mobile-menu-button {
                                 display: inline-block;
                             }
+                        }
+                        
+                        @media (max-width: 650px) {
+                            .container {
+                                max-width: 93%;
+                            }
+                            header nav {
+                                display: none;
+                            }
+                            .mobile-menu-button {
+                                display: inline-block;
+                            }
+                            .pets {
+                                max-width: 85%;
+                                margin: auto;
+                            }
                             .pets,
                             .footer-box {
-                                justify-content: space-around;
+                                justify-content: space-evenly;
                             }
                             .pet-card:nth-of-type(4),
                             .pet-card:nth-of-type(5),

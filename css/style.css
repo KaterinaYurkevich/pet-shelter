@@ -73,13 +73,17 @@ header a {
     margin-top: 10px;
 }
 
-nav ul {
+header nav ul {
     display: flex;
 }
 
-nav li {
+header nav li {
     list-style: none;
     margin-left: 35px;
+}
+
+header nav li:first-child {
+    margin-left: 0;
 }
 
 .navigation {
@@ -209,7 +213,7 @@ main h2 {
 
 .friends-looking-house-cards {
     display: flex;
-    width: 990px;
+    width: 82.5%;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
@@ -421,6 +425,18 @@ footer a {
     }
 }
 
+@media (max-width: 1050px) {
+    .pet-card:nth-of-type(3) {
+        display: none;
+    }
+    .friends-looking-house-cards,
+    .help-shelter,
+    .about-donation,
+    .footer-box {
+        justify-content: space-around;
+    }
+}
+
 @media (max-width: 990px) {
     .container {
         max-width: 92%;
@@ -431,25 +447,49 @@ footer a {
     .box-about-wrapper {
         background: none;
         padding: 30px 0 50px;
+        text-align: center;
+    }
+    .box-about h1 {
+        max-width: 80%;
+        margin: auto;
+    }
+    .box-about p {
+        max-width: 80%;
+        margin: 42px auto 41px;
     }
     .box-about-shelter {
         max-width: 320px;
     }
-    .friends-looking-house-cards,
-    .help-shelter,
-    .about-donation,
-    .footer-box {
-        justify-content: space-around;
-    }
     .about-donation {
         padding: 0 50px;
     }
-    .pet-card:nth-of-type(3) {
+    .about-donation-text {
+        max-width: 70%;
+        margin: 30px auto 0;
+    }
+    .box-contacts,
+    .box-place {
+        margin: 0 10px;
+    }
+}
+
+@media (max-width: 780px) {
+    header nav li {
+        margin-left: 15px;
+    }
+    .box-about h1 {
+        max-width: 50%;
+        margin: auto;
+    }
+}
+
+@media (max-width: 730px) {
+    .pet-card:nth-of-type(2) {
         display: none;
     }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 660px) {
     .container {
         max-width: 93%;
     }
@@ -458,6 +498,9 @@ footer a {
     }
     .mobile-menu-button {
         display: inline-block;
+    }
+    .box-about h1 {
+        max-width: 70%;
     }
     .about-donation {
         padding: 0 25px;
@@ -469,7 +512,31 @@ footer a {
         font-size: 12px;
         padding-left: 25px;
     }
-    .pet-card:nth-of-type(2) {
-        display: none;
+}
+
+@media (max-width: 500px) {
+    .box-about h1 {
+        font-size: 35px;
+    }
+    .container h2,
+    .container h3 {
+        font-size: 27px;
+    }
+}
+
+@media (max-width: 420px) {
+    .pet-nav-button-left {
+        order: 1;
+    }
+    .pet-nav-button-right {
+        order: 2;
+    }
+    .friends-looking-house {
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .friends-looking-house-cards {
+        width: 100%;
+        margin-bottom: 20px;
     }
 }
