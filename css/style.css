@@ -524,7 +524,7 @@ footer a {
     }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 510px) {
     .box-about h1 {
         font-size: 35px;
     }
