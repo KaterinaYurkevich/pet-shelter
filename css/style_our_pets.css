@@ -259,11 +259,21 @@
                             }
                         }
                         
+                        @media (max-width: 1050px) {
+                            .footer-box {
+                                justify-content: space-around;
+                            }
+                        }
+                        
                         @media (max-width: 900px) {
                             .pets {
                                 max-width: 90%;
                                 margin: auto;
                                 justify-content: space-evenly;
+                            }
+                            .pet-card:nth-of-type(7),
+                            .pet-card:nth-of-type(8) {
+                                display: none;
                             }
                         }
                         
@@ -273,13 +283,6 @@
                             }
                             header nav li {
                                 margin-left: 15px;
-                            }
-                            .footer-box {
-                                justify-content: space-around;
-                            }
-                            .pet-card:nth-of-type(7),
-                            .pet-card:nth-of-type(8) {
-                                display: none;
                             }
                         }
                         
@@ -292,6 +295,10 @@
                             }
                             .mobile-menu-button {
                                 display: inline-block;
+                            }
+                            .footer-box {
+                                flex-direction: column;
+                                align-items: center;
                             }
                         }
                         
